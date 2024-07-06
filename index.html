@@ -1,0 +1,318 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=quicksand@500&f[]=general-sans@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c416e79406.js" crossorigin="anonymous"></script>
+    <style>
+        .text {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .title {
+            font-family: 'General Sans', sans-serif;
+        }
+
+        #toggle_nav:checked~div #hamburger #line {
+            @apply rotate-45 translate-y-1.5
+        }
+
+        #toggle_nav:checked~div #hamburger #line2 {
+            @apply -rotate-45 -translate-y-1
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+    <section class="relative">
+
+        <header class=" absolute text">
+            <nav class=" z-10 w-screen ">
+                <div class="container mx-auto px-8 md:px-12 lg:px-6">
+                    <div class="relative flex flex-wrap items-center justify-between gap-6 py-2 md:gap-0 md:py-4">
+                        <input aria-hidden="true" type="checkbox" name="toggle_nav" id="toggle_nav"
+                            class="peer hidden" />
+                        <div class="relative z-20 flex w-full justify-between md:px-0 lg:w-max">
+                            <a href="#" aria-label="logo" class="flex items-start pl-0">
+                                <img src="https://lh6.googleusercontent.com/proxy/X2WonW0dTEkMQfR9Vh6Y0SVG7gvgHbpA0C6EJ91_6JAWcyNoAUZlAC5MwRQCVocxfnEwf5BaWzpkl-CNNF3tbzn0C5jSIjkvDJnapK-cVsbPQOfqh3pXG8v0-sVgUw2m"
+                                    alt="Sahaj Infotech Logo" class="h-8 w-auto" />
+                            </a>
+                            <div class="relative flex max-h-10 items-center lg:hidden">
+                                <label role="button" for="toggle_nav" aria-label="humburger" id="hamburger"
+                                    class="relative -mr-6 p-6">
+                                    <div aria-hidden="true" id="line"
+                                        class="m-auto h-0.5 w-5 rounded bg-sky-900 transition duration-300"></div>
+                                    <div aria-hidden="true" id="line2"
+                                        class="m-auto mt-2 h-0.5 w-5 rounded bg-sky-900 transition duration-300"></div>
+                                </label>
+                            </div>
+                        </div>
+                        <label aria-hidden="true" for="toggle_nav"
+                            class="fixed inset-0 z-10 h-screen w-screen origin-bottom scale-y-0 bg-white/70 backdrop-blur-2xl transition duration-500 peer-checked:origin-top peer-checked:scale-y-100 lg:hidden"></label>
+                        <div
+                            class="invisible absolute top-full left-0 z-20 w-full origin-top translate-y-1 scale-95 flex-col flex-wrap justify-end gap-6 rounded-3xl border border-gray-100 bg-white p-8 opacity-0 shadow-2xl shadow-gray-600/10 transition-all duration-300 peer-checked:visible peer-checked:scale-100 peer-checked:opacity-100 lg:visible lg:relative lg:flex lg:w-7/12 lg:translate-y-0 lg:scale-100 lg:flex-row lg:items-center lg:gap-0 lg:border-none lg:bg-transparent lg:p-0 lg:opacity-100 lg:shadow-none lg:peer-checked:translate-y-0">
+                            <div class="w-full text-gray-200 lg:w-auto lg:pr-4 lg:pt-0">
+                                <ul class="flex flex-col gap-5 font-medium  lg:flex-row lg:gap-0 lg:text-sm">
+                                    <li>
+                                        <a href="#"
+                                            class="block transition delay-5000 ease-in-out  hover:underline hover:underline-offset-8  hover:text-primary md:px-4">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block  transition delay-5000 ease-in-out  hover:underline hover:underline-offset-8  hover:text-primary md:px-4">
+                                            <span>About Us</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"
+                                            class="block  transition delay-5000 ease-in-out  hover:underline hover:underline-offset-8  hover:text-primary md:px-4">
+                                            <span>Projects</span>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#"
+                                            class="block transition delay-5000 ease-in-out  hover:underline hover:underline-offset-8  hover:text-primary md:px-4">
+                                            <span>Careers</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="mt-12 lg:mt-0">
+                                <a href="#"
+                                    class="relative flex h-9 w-full items-center justify-center px-4 before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 sm:w-max">
+                                    <span
+                                        class="relative text-sm font-semibold transition delay-5000 ease-in-out  px-5 py-2 rounded-full border-2 border-white hover:bg-white hover:text-black text-white">Contact
+                                        Us</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section class="h-screen w-screen flex flex-cols ">
+            <div class="w-1/3 flex flex-cols relative justify-center items-center  ">
+                <div class="bottom-0 absolute  grid  py-10 px-10 grid-rows gap-5">
+                    <div class="text-4xl title text-black">Simpler,</div>
+                    <div class="text-5xl title text-black">Smarter,</div>
+                    <div class="text-6xl mb-5  title text-black">Stronger.</div>
+                    <div class=" title text-black text-justify">At Sahaj InfoTech, we are dedicated to transforming your
+                        digital
+                        experience with innovative and reliable technology solutions. Our commitment to excellence
+                        ensures
+                        your business thrives in an ever-evolving digital landscape.</div>
+
+                    <a href="#"
+                        class="relative flex h-9 w-full items-center justify-center before:absolute before:inset-0 before:rounded-full before:bg-primary before:transition before:duration-300 hover:before:scale-105 active:duration-75 active:before:scale-95 w-full">
+                        <span
+                            class="border-2  transition delay-5000 ease-in-out  hover:text-[#073B4C]  hover:bg-white border-[#073B4C] relative text-sm font-semibold px-5 py-2 rounded-full bg-[#073B4C] text-white flex items-center justify-center w-full">Learn
+                            More <i class="fa fa-arrow-right ml-2"></i></span>
+                    </a>
+
+                </div>
+            </div>
+            <div
+                class="w-2/3 z-0 bg-[url('https://images.unsplash.com/photo-1581291519195-ef11498d1cf2?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] opacity-100 bg-cover relative ">
+                <div class="grid grid-rows gap-10 absolute right-5 text-white bottom-10">
+                    <div
+                        class="hover:bg-white hover:text-black h-10 w-10 flex flex-cols justify-center items-center transition delay-5000 ease-in-out   rounded-full">
+                        <i class="fa-brands fa-x-twitter opacity-100"></i>
+                    </div>
+                    <div
+                        class="hover:bg-white hover:text-black h-10 w-10 flex flex-cols justify-center items-center transition delay-5000 ease-in-out   rounded-full">
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+                    <div
+                        class="hover:bg-white hover:text-black h-10 w-10 flex flex-cols justify-center items-center transition delay-5000 ease-in-out   rounded-full">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </div>
+                    <div
+                        class="hover:bg-white hover:text-black h-10 w-10 flex flex-cols justify-center items-center transition delay-5000 ease-in-out   rounded-full">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+    </section>
+    <section class=" p-5 my-5 ">
+        <div class="h-1/2  grid ">
+            <div class="flex flex-cols p-5 gap-5 ">
+                <div class="w-2/3  title text-4xl h-full text-7xl title grid">What Our Customers <span
+                        class="">Say</span></div>
+                <div class="w-1/3 bg-gray-200 h-[25vh] rounded-lg p-4 relative text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <div class="absolute bottom-5 right-5 title grid text-right "><span
+                            class="text-xl text-gray-700">Client Name</span><span class="text-gray-500">Company
+                            Name</span>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-cols gap-5 p-5 ">
+
+                <div class="w-1/3 bg-gray-200 h-[25vh] rounded-lg p-4 relative text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <div class="absolute bottom-5 right-5 title grid text-right "><span
+                            class="text-xl text-gray-700">Client Name</span><span class="text-gray-500">Company
+                            Name</span>
+                    </div>
+                </div>
+                <div class="w-1/3 bg-gray-200 h-[25vh] rounded-lg p-4 relative text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <div class="absolute bottom-5 right-5 title grid text-right "><span
+                            class="text-xl text-gray-700">Client Name</span><span class="text-gray-500">Company
+                            Name</span>
+                    </div>
+                </div>
+                <div class="w-1/3 bg-gray-200 h-[25vh] rounded-lg p-4 relative text">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.</p>
+                    <div class="absolute bottom-5 right-5 title grid text-right "><span
+                            class="text-xl text-gray-700">Client Name</span><span class="text-gray-500">Company
+                            Name</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class=" p-5 my-5  p">
+        <div class="h-1/2  grid bg-gray-300 rounded-3xl relative">
+            <div class="flex flex-cols p-5 gap-5 ">
+                <div class="w-2/3  title text-4xl h-full text-7xl title grid">Services</div>
+
+            </div>
+            <div class="flex flex-cols gap-5 p-5 " id="cardContainer">
+
+                           <div class="w-1/3 bg-gray-200 h-[45vh] hover:bg-[#073B4C] transition delay-5000 ease-in-out hover:text-white rounded-lg relative text p-5 card">
+                    <div class="text-5xl title  text-right  ">01</div>
+                    <div class="bottom-5 absolute">
+                        <div class="text-4xl   m-5 text-left title">SAHAJ CRM</div>
+                        <div class=" m-5 text-left ">Sahaj CRM analyzes customer interactions and data to
+                            foster long-lasting relationships. It consolidates customer information into a single unit.
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="w-1/3 bg-gray-200 h-[45vh] hover:bg-[#073B4C] transition delay-5000 ease-in-out hover:text-white rounded-lg relative text p-5 card">
+                    <div class="text-5xl title  text-right  ">02</div>
+                    <div class="bottom-5 absolute">
+                        <div class="text-4xl    m-5 text-left title">SAHAJ BUSINESSMATE</div>
+                        <div class="  m-5 text-left ">Businessmate streamlines business processes, automating
+                            tasks and workflows across departments.</div>
+                    </div>
+                </div>
+            
+            <div class="w-1/3 bg-gray-200 h-[45vh] hover:bg-[#073B4C] transition delay-5000 ease-in-out hover:text-white rounded-lg relative text p-5 card">
+                <div class="text-5xl title  text-right  ">03</div>
+                <div class="bottom-5 absolute">
+                    <div class="text-4xl    m-5 text-left title">SAHAJ ACCOUNTING</div>
+                    <div class="  m-5 text-left ">Easy transaction recording and custom fields provide diverse
+                        reports and help in proper decision making
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 bg-gray-200 h-[45vh] hover:bg-[#073B4C] transition delay-5000 ease-in-out hover:text-white rounded-lg relative text p-5 card">
+                <div class="text-5xl title  text-right  ">04</div>
+                <div class="bottom-5 absolute">
+                    <div class="text-4xl    m-5 text-left title">SAHAJ PAYROLL</div>
+                    <div class="  m-5 text-left ">From Payroll management, employee finance, statutory
+                        compliance, loans and advancements to incentives, deduction etc all under one umbrella.
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 bg-gray-200 h-[45vh] hover:bg-[#073B4C] transition delay-5000 ease-in-out hover:text-white rounded-lg relative text p-5 card">
+                <div class="text-5xl title  text-right  ">05</div>
+                <div class="bottom-5 absolute">
+                    <div class="text-4xl    m-5 text-left title">SAHAJ HRMS</div>
+                    <div class="  m-5 text-left ">Sahaj HRMS enhances enterprise efficiency, quality, and
+                        cost-effectiveness through automation and performance oversight.</div>
+                </div>
+            </div>
+            <div class="w-1/3 bg-gray-200 h-[45vh] hover:bg-[#073B4C] transition delay-5000 ease-in-out hover:text-white rounded-lg relative text p-5 card">
+                <div class="text-5xl title  text-right  ">06</div>
+                <div class="bottom-5 absolute">
+                    <div class="text-4xl    m-5 text-left title">SAHAJ WORKFLOW</div>
+                    <div class="  m-5 text-left ">Convert Your Business entropy into automation.
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 bg-gray-200 h-[45vh] hover:bg-[#073B4C] transition delay-5000 ease-in-out hover:text-white rounded-lg relative text p-5 card">
+                <div class="text-5xl title  text-right  ">07</div>
+                <div class="bottom-5 absolute">
+                    <div class="text-4xl    m-5 text-left title">SAHAJ SCHOOL ERP</div>
+                    <div class="  m-5 text-left ">Make this innovative and comprehensive platform the part of your institution and generate insightful reports and make quick decisions.
+                    </div>
+                </div>
+            </div>
+            <div class="w-1/3 bg-gray-200 h-[45vh] hover:bg-[#073B4C] transition delay-5000 ease-in-out hover:text-white rounded-lg relative text p-5 card">
+                <div class="text-5xl title  text-right  ">08</div>
+                <div class="bottom-5 absolute">
+                    <div class="text-4xl    m-5 text-left title">SAHAJ TAXMATE
+                        
+                        </div>
+                    <div class="  m-5 text-left ">Effortless tax management and reporting with comprehensive tools for accurate calculations, compliance, and timely submissions. Simplify your tax processes and ensure peace of mind.
+                    </div>
+                </div>
+            </div>
+           
+            </div>
+            <div class="flex gap-5 justify-center mt-5 absolute top-5 right-5">
+                <button id="prevButton" class="mr-2 h-10 w-10 bg-gray-500 text-white rounded-full">
+                    <span>&larr;</span> 
+                </button>
+                <button id="nextButton" class="h-10 w-10 bg-gray-500 text-white rounded-full"> <span>&rarr;</span> </button>
+                <button  class="px-5 py-2 border-2 border-black text-black hover:bg-black hover:text-white rounded-full"> <span>Request A demo</span> </button>
+            </div>
+            <script>
+                let cardContainer = document.getElementById('cardContainer');
+                let cards = cardContainer.getElementsByClassName('card');
+                let prevButton = document.getElementById('prevButton');
+                let nextButton = document.getElementById('nextButton');
+                let cardIndex = 0;
+
+                function showCards() {
+                    for (let i = 0; i < cards.length; i++) {
+                        if (i >= cardIndex && i < cardIndex + 3) {
+                            cards[i].style.display = "block";
+                        } else {
+                            cards[i].style.display = "none";
+                        }
+                    }
+                }
+
+                prevButton.addEventListener('click', function () {
+                    if (cardIndex > 0) {
+                        cardIndex -= 3;
+                        showCards();
+                    }
+                });
+
+                nextButton.addEventListener('click', function () {
+                    if (cardIndex < cards.length - 3) {
+                        cardIndex += 3;
+                        showCards();
+                    }
+                });
+
+                showCards();
+            </script>
+        </div>
+    </section>
+</body>
+
+</html>
