@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://api.fontshare.com/v2/css?f[]=quicksand@500&f[]=general-sans@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c416e79406.js" crossorigin="anonymous"></script>
+    <style>
+        .text {
+            font-family: 'Quicksand', sans-serif;
+        }
+
+        .title {
+            font-family: 'General Sans', sans-serif;
+        }
+
+        #toggle_nav:checked~div #hamburger #line {
+            @apply rotate-45 translate-y-1.5
+        }
+
+        #toggle_nav:checked~div #hamburger #line2 {
+            @apply -rotate-45 -translate-y-1
+        }
+    </style>
+</head>
+
+<body class="overflow-x-hidden">
+ 
+</body>
+
+</html>
